@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json()); 
 
 // This code redirects requests to endpoint /kpi to kpiRoutes.js
-app.use ("https://restapitutorial.herokuapp.com/api/v1/kpi", require("./routes/kpiRoutes"));
+app.use ("/api/v1/kpi", require("./routes/kpiRoutes"));
 
 // The global error handler catches any errors within this application.
 // This script sends the error information to our console.log 
